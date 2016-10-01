@@ -37,6 +37,7 @@ NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle "hynek/vim-python-pep8-indent"
 NeoBundle "kevinw/pyflakes-vim"
+NeoBundle "nvie/vim-flake8"
 
 " NeoBundle設定の終了
 call neobundle#end()
