@@ -7,15 +7,6 @@ set autoindent "改行時に前の行のインデントを継続する
 set smartindent "改行時に入力された行の末尾に合わせて次の行のインデントを増減する
 "---------------------------vim set end-------------------------------
 
-
-"---------------------------proxy経由のinstall動作設定 start----------
-" プロキシ環境用の設定ファイルを読み込む（リポジトリでは管理しない）
-if filereadable($HOME . '.vimrc.local')
-  source $HOME/.vimrc.local
-endif
-"---------------------------proxy経由のinstall動作設定 end------------
-
-
 "---------------------------NeoBundle start---------------------------
 " Note: Skip initialization for vim-tiny or vim-small.
 if 0 | endif
