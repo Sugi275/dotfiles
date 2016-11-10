@@ -7,6 +7,24 @@ set autoindent "改行時に前の行のインデントを継続する
 set smartindent "改行時に入力された行の末尾に合わせて次の行のインデントを増減する
 "---------------------------vim set end-------------------------------
 
+"---------------------------auto paste start--------------------------
+if &term =~ "xterm"
+    let &t_ti .= "\e[?2004h"
+    let &t_te .= "\e[?2004l"
+    let &pastetoggle = "\e[201~"
+
+    function XTermPasteBegin(ret)
+        set paste
+        return a:ret
+    endfunction
+
+    noremap <special> <expr> <Esc>[200~ XTermPasteBegin("0i")
+    inoremap <special> <expr> <Esc>[200~ XTermPasteBegin("")
+    cnoremap <special> <Esc>[200~ <nop>
+    cnoremap <special> <Esc>[201~ <nop>
+endif
+"---------------------------auto paste end----------------------------
+
 "---------------------------NeoBundle start---------------------------
 " Note: Skip initialization for vim-tiny or vim-small.
 if 0 | endif
