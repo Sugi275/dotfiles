@@ -1,7 +1,7 @@
-インストール手順メモ
-
+## インストール手順(python有り)
+```
 yum install -y vim
-#yum install -y git
+yum install -y git
 git clone https://github.com/ToraLin/dotfiles ~/dotfiles
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
 yum -y install wget
@@ -14,3 +14,15 @@ pip install flake8
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 vim
 →インストールを聞かれるのでy
+```
+
+## インストール手順(python無し)
+```
+yum install -y vim
+yum install -y git
+git clone https://github.com/ToraLin/dotfiles ~/dotfiles
+ln -sf ~/dotfiles/.vimrc_nopython ~/.vimrc
+git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+vim
+→インストールを聞かれるのでy
+```
