@@ -2,7 +2,7 @@
 ```
 yum install -y vim
 yum install -y git
-git clone https://github.com/ToraLin/dotfiles ~/dotfiles
+git clone https://github.com/Sugi275/dotfiles ~/dotfiles
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
 yum -y install wget
 cd /tmp
@@ -20,7 +20,7 @@ vim
 ```
 yum install -y vim
 yum install -y git
-git clone https://github.com/ToraLin/dotfiles ~/dotfiles
+git clone https://github.com/Sugi275/dotfiles ~/dotfiles
 ln -sf ~/dotfiles/.vimrc_nopython ~/.vimrc
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 vim
