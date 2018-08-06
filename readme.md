@@ -26,3 +26,9 @@ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 vim
 →インストールを聞かれるのでy
 ```
+
+## Git Proxy memo
+```
+git config --global http.proxy http://192.168.1.200:8080
+git config --global https.proxy http://192.168.1.200:8080
+```
