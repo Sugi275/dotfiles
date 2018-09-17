@@ -23,6 +23,7 @@ ln -sf ~/dotfiles/.vimrc_go ~/.vimrc
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 vim
 →インストールを聞かれるのでy
+vimの画面で :GoInstallBinaries コマンドを実行し、vim-go で必要なパッケージ群をインストール
 ```
 
 ## インストール手順(IDE無し)
