@@ -1,9 +1,9 @@
-## インストール手順(python有り)
+## インストール手順(python用IDE)
 ```
 yum install -y vim
 yum install -y git
 git clone https://github.com/Sugi275/dotfiles ~/dotfiles
-ln -sf ~/dotfiles/.vimrc ~/.vimrc
+ln -sf ~/dotfiles/.vimrc_python ~/.vimrc
 yum -y install wget
 cd /tmp
 wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
@@ -16,16 +16,23 @@ vim
 →インストールを聞かれるのでy
 ```
 
-## インストール手順(python無し)
+## インストール手順(go用IDE)
+```
+todo update
+```
+
+## インストール手順(IDE無し)
 ```
 yum install -y vim
 yum install -y git
 git clone https://github.com/Sugi275/dotfiles ~/dotfiles
-ln -sf ~/dotfiles/.vimrc_nopython ~/.vimrc
+ln -sf ~/dotfiles/.vimrc_general ~/.vimrc
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 vim
 →インストールを聞かれるのでy
 ```
+
+
 
 ## Git Proxy memo
 ```
