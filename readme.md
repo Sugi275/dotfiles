@@ -1,7 +1,6 @@
 ## インストール手順(python用IDE)
 ```
-yum install -y vim
-yum install -y git
+yum install -y vim git
 git clone https://github.com/Sugi275/dotfiles ~/dotfiles
 ln -sf ~/dotfiles/.vimrc_python ~/.vimrc
 yum -y install wget
@@ -23,8 +22,7 @@ todo update
 
 ## インストール手順(IDE無し)
 ```
-yum install -y vim
-yum install -y git
+yum install -y vim git
 git clone https://github.com/Sugi275/dotfiles ~/dotfiles
 ln -sf ~/dotfiles/.vimrc_general ~/.vimrc
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
