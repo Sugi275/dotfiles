@@ -17,7 +17,12 @@ vim
 
 ## インストール手順(go用IDE)
 ```
-todo update
+yum install -y vim git
+git clone https://github.com/Sugi275/dotfiles ~/dotfiles
+ln -sf ~/dotfiles/.vimrc_go ~/.vimrc
+git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+vim
+→インストールを聞かれるのでy
 ```
 
 ## インストール手順(IDE無し)
