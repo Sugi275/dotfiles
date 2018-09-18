@@ -5,7 +5,27 @@ set softtabstop=4 "連続した空白に対してタブキーやバックスペ�
 set autoindent "改行時に前の行のインデントを継続する
 set smartindent "改行時に入力された行の末尾に合わせて次の行のインデントを増減する
 set autowrite "自動ファイル保存。:GoBuildコマンドを実行したときに、自動でファイルを保存してBuildする
+let mapleader = "\<Space>"
+set showcmd "leaderキーを押した時に、右下に表示
+let g:go_list_type = "quickfix" "ロケーションリストをquickfixに表示する
+let g:go_highlight_types = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_metalinter_autosave = 1
+set backspace=indent,eol,start "BackSpaceが効かない問題に対応
+autocmd FileType go nmap <Leader>i <Plug>(go-info)
 "---------------------------vim set end-------------------------------
+
+"---------------------------key map vim-go start----------------------
+map <C-n> :cnext<CR> 
+map <C-m> :cprevious<CR>
+
+" 補完時に自動入力しない
+inoremap <buffer> <C-X><C-O> <C-X><C-O><C-P>
+nnoremap <leader>a :cclose<CR>
+autocmd FileType go nmap <leader>b  <Plug>(go-build)
+autocmd FileType go nmap <leader>r  <Plug>(go-run)
+"---------------------------key map vim-go end------------------------
 
 "---------------------------auto paste start--------------------------
 if &term =~ "xterm"
@@ -51,6 +71,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'fatih/vim-go'
+NeoBundle 'ctrlpvim/ctrlp.vim'
 
 " NeoBundle設定の終了
 call neobundle#end()
