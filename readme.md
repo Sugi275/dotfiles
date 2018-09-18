@@ -38,8 +38,13 @@ vim
 
 
 
-## Git Proxy memo
+## memo Git Proxy  
 ```
 git config --global http.proxy http://192.168.1.200:8080
 git config --global https.proxy http://192.168.1.200:8080
+```
+
+## memo Git password store
+```
+git config --global credential.helper store
 ```

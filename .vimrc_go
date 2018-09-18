@@ -72,6 +72,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'cohama/lexima.vim'
 
 " NeoBundle設定の終了
 call neobundle#end()
