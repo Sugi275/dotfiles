@@ -23,6 +23,7 @@ map <C-m> :cprevious<CR>
 " 補完時に自動入力しない
 inoremap <buffer> <C-X><C-O> <C-X><C-O><C-P>
 nnoremap <leader>a :cclose<CR>
+nnoremap <leader>d :GoDoc<CR>
 autocmd FileType go nmap <leader>b  <Plug>(go-build)
 autocmd FileType go nmap <leader>r  <Plug>(go-run)
 "---------------------------key map vim-go end------------------------
