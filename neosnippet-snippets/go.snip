@@ -1,0 +1,13 @@
+source go.vim
+
+snippet ier
+abbr if error snippet
+	if err != nil {
+		return errors.Wrap(err, "${1:error message}")
+	}
+
+snippet iep
+abbr print error snippet
+	if err != nil {
+		errors.Fprint(os.Stderr, err)
+	}

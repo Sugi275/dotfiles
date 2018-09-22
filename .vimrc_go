@@ -26,6 +26,11 @@ nnoremap <leader>a :cclose<CR>
 nnoremap <leader>d :GoDoc<CR>
 autocmd FileType go nmap <leader>b  <Plug>(go-build)
 autocmd FileType go nmap <leader>r  <Plug>(go-run)
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 "---------------------------key map vim-go end------------------------
 
 "---------------------------auto paste start--------------------------
@@ -74,6 +79,9 @@ NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'cohama/lexima.vim'
+"NeoBundle 'SirVer/ultisnips'
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/neosnippet-snippets'
 
 " NeoBundle設定の終了
 call neobundle#end()
@@ -83,6 +91,10 @@ filetype plugin indent on
 " vim起動時に未インストールのプラグインをインストールする
 NeoBundleCheck
 "---------------------------NeoBundle end-----------------------------
+
+
+let g:neosnippet#snippets_directory='~/dotfiles/neosnippet-snippets/'
+
 
 "---------------------------color hybrid start------------------------
 syntax on 
