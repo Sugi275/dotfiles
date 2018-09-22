@@ -8,6 +8,8 @@ abbr if error snippet
 
 snippet iep
 abbr print error snippet
-	if err != nil {
-		errors.Fprint(os.Stderr, err)
-	}
+    if err != nil {
+        causeErr := errors.Cause(err)
+        fmt.Printf("%+v", causeErr)
+        return
+    }
