@@ -36,7 +36,11 @@ vim
 →インストールを聞かれるのでy
 ```
 
+## tmux
 
+```
+ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
+```
 
 ## memo Git Proxy  
 ```
