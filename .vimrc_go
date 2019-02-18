@@ -75,7 +75,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " 下記は unite.vimというプラグインをインストールする例
 " NeoBundle 'Shougo/unite.vim'
 
-NeoBundle 'w0ng/vim-hybrid'
+" NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'cohama/lexima.vim'
@@ -100,5 +100,5 @@ let g:neosnippet#snippets_directory='~/dotfiles/neosnippet-snippets/'
 syntax on 
 set t_Co=256
 set background=dark 
-colorscheme hybrid
+" colorscheme hybrid
 "---------------------------color hybrid end------------------------

@@ -51,7 +51,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'thinca/vim-quickrun'
-NeoBundle 'w0ng/vim-hybrid'
+" NeoBundle 'w0ng/vim-hybrid'
 NeoBundle "hynek/vim-python-pep8-indent"
 NeoBundle "kevinw/pyflakes-vim"
 NeoBundle "nvie/vim-flake8"
@@ -124,7 +124,7 @@ nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() 
 syntax on 
 set t_Co=256
 set background=dark 
-colorscheme hybrid
+" colorscheme hybrid
 "---------------------------color hybrid end------------------------
 
 

@@ -49,7 +49,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " 下記は unite.vimというプラグインをインストールする例
 " NeoBundle 'Shougo/unite.vim'
 
-NeoBundle 'w0ng/vim-hybrid'
+" NeoBundle 'w0ng/vim-hybrid'
 
 " NeoBundle設定の終了
 call neobundle#end()
@@ -64,5 +64,5 @@ NeoBundleCheck
 syntax on 
 set t_Co=256
 set background=dark 
-colorscheme hybrid
+" colorscheme hybrid
 "---------------------------color hybrid end------------------------
