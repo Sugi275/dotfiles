@@ -7,6 +7,7 @@ set smartindent "改行時に入力された行の末尾に合わせて次の行
 set autowrite "自動ファイル保存。:GoBuildコマンドを実行したときに、自動でファイルを保存してBuildする
 let mapleader = "\<Space>"
 set showcmd "leaderキーを押した時に、右下に表示
+set hlsearch "検索時のハイライトを有効化
 let g:go_list_type = "quickfix" "ロケーションリストをquickfixに表示する
 let g:go_highlight_types = 1
 let g:go_highlight_functions = 1
