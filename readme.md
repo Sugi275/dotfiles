@@ -24,6 +24,9 @@ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 vim
 →インストールを聞かれるのでy
 vimの画面で :GoInstallBinaries コマンドを実行し、vim-go で必要なパッケージ群をインストール
+
+→上記コマンドの後、以下のコマンドを別途実行することで、エラーが解消できた(? 環境依存かも)
+go get -u golang.org/x/tools/gopls
 ```
 
 ## インストール手順(IDE無し)
